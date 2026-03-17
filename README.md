@@ -2,6 +2,8 @@
 
 Visualize PyTorch checkpoint parameters in a browser heatmap. The UI supports key autocomplete, zoom/pan, and hover values for large tensors via a tile-based API.
 
+<img src="assets/image-20260317161000934.png" style="zoom:70%;" />
+
 ## Requirements
 
 - Python 3.10+
