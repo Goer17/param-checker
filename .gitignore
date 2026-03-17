@@ -1,0 +1,30 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+
+# Build/distribution
+build/
+dist/
+*.egg-info/
+
+# Checkpoints and local artifacts
+*.pth
+*.pt
+
+# Logs and temp files
+*.log
+.DS_Store
+
+# Tool caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# IDE
+.vscode/
+.idea/

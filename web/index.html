@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Param Checker</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="bg-grid"></div>
+    <main class="app-shell">
+      <header class="top-panel">
+        <h1>Param Checker</h1>
+        <p>Visualize PyTorch tensor parameters from a checkpoint file.</p>
+        <div class="controls">
+          <label for="keyInput">Tensor key</label>
+          <div class="input-row">
+            <input
+              id="keyInput"
+              type="text"
+              list="keyOptions"
+              placeholder="e.g. state_dict.layer1.weight"
+              autocomplete="off"
+            />
+            <datalist id="keyOptions"></datalist>
+            <button id="displayBtn" type="button">Display</button>
+          </div>
+        </div>
+      </header>
+
+      <section class="viewer-panel">
+        <div class="meta-bar" id="metaBar">Loading keys...</div>
+        <div class="legend-wrap">
+          <span>Low</span>
+          <div class="legend-gradient"></div>
+          <span>High</span>
+        </div>
+        <div class="canvas-wrap" id="canvasWrap">
+          <canvas id="heatmapCanvas"></canvas>
+          <div id="tooltip" class="tooltip hidden"></div>
+        </div>
+      </section>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
